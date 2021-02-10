@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentStartPageController">
+   <children>
+      <Label layoutX="333.0" layoutY="35.0" text="Välkommen!">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Button layoutX="467.0" layoutY="337.0" mnemonicParsing="false" onAction="#goToSearch" prefHeight="100.0" prefWidth="300.0" text="Sök på Biblioteket" />
+      <Button layoutX="47.0" layoutY="337.0" mnemonicParsing="false" onAction="#logOut" prefHeight="100.0" prefWidth="300.0" text="Logga Ut" />
+   </children>
+</AnchorPane>

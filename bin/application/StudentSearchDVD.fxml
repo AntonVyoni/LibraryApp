@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentSearchDVDController">
+   <children>
+      <TextField fx:id="searchTitleTxt" layoutX="119.0" layoutY="104.0" prefHeight="26.0" prefWidth="346.0" />
+      <Button fx:id="searchExecute" layoutX="435.0" layoutY="541.0" mnemonicParsing="false" onAction="#searchExec" prefHeight="26.0" prefWidth="111.0" text="Sök" />
+      <Label layoutX="119.0" layoutY="87.0" text="Titel" />
+      <Label layoutX="254.0" layoutY="29.0" text="DVD-sökning">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></Label>
+      <TextField fx:id="searchDirectorFirstNameTxt" layoutX="119.0" layoutY="171.0" prefHeight="26.0" prefWidth="346.0" />
+      <Label layoutX="119.0" layoutY="154.0" text="Regissörens förnamn" />
+      <TextField fx:id="searchCountryTxt" layoutX="119.0" layoutY="317.0" prefHeight="26.0" prefWidth="346.0" />
+      <Label layoutX="119.0" layoutY="300.0" text="Land" />
+      <TextField fx:id="searchGenreTxt" layoutX="119.0" layoutY="391.0" prefHeight="26.0" prefWidth="346.0" />
+      <Label layoutX="119.0" layoutY="374.0" text="Genre" />
+      <Label fx:id="searchWarning" layoutX="435.0" layoutY="517.0" />
+      <TextField fx:id="searchDirectorLastNameTxt" layoutX="118.0" layoutY="245.0" prefHeight="26.0" prefWidth="346.0" />
+      <Label fx:id="searchDirectorLastName" layoutX="118.0" layoutY="228.0" text="Regissörens efternamn" />
+      <Button layoutX="66.0" layoutY="542.0" mnemonicParsing="false" onAction="#goBack" text="Bakåt" />
+   </children>
+</AnchorPane>

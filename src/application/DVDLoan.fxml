@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="274.0" layoutY="238.0" mnemonicParsing="false" onAction="#executeBookLoan" text="Utför lån" />
+      <Button layoutX="88.0" layoutY="238.0" mnemonicParsing="false" onAction="#goBack" text="Tillbaka" />
+      <Label layoutX="39.0" layoutY="74.0" text="Titel:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="111.0" text="Författare:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="152.0" text="Lånetid:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="loanPrompt" layoutX="88.0" layoutY="203.0" />
+      <Label layoutX="99.0" layoutY="14.0" text="Önskar du låna följande?">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="loanTitle" layoutX="74.0" layoutY="74.0" />
+      <Label fx:id="loanAuthorFullName" layoutX="102.0" layoutY="111.0" />
+      <Label fx:id="loanDuration" layoutX="88.0" layoutY="152.0" />
+   </children>
+</AnchorPane>

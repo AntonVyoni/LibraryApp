@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="table" layoutX="44.0" layoutY="73.0" prefHeight="482.0" prefWidth="717.0">
+      <Text fx:id="titleText" />
+      <Text fx:id="directorText" />
+      <Text fx:id="countryText" />
+      <Text fx:id="genreText" />
+          <placeholder>
+        <Label text="Din sökning gav inga resultat" />
+    </placeholder>
+        <columns>
+          <TableColumn fx:id="columnTitle" prefWidth="256.00006103515625" text="Titel" />
+          <TableColumn fx:id="columnDirector" prefWidth="179.99993896484375" text="Regissör" />
+            <TableColumn fx:id="columnCountry" prefWidth="125.5999755859375" text="Land" />
+            <TableColumn fx:id="columnGenre" prefWidth="157.5999755859375" text="Genre" />
+        </columns>
+      </TableView>
+      <Label fx:id="searchResultInfo" layoutX="44.0" layoutY="56.0" textFill="RED" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="7.0" layoutY="25.0" text="Vill du reservera exemplar?">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="154.0" layoutY="126.0" mnemonicParsing="false" onAction="#executeReservation" prefHeight="50.0" prefWidth="140.0" text="Reservera">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="7.0" layoutY="126.0" mnemonicParsing="false" onAction="#goBack" prefHeight="50.0" prefWidth="140.0" text="Stäng">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="prompt" layoutX="14.0" layoutY="92.0" />
+   </children>
+</AnchorPane>

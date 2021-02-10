@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="51.0" layoutY="14.0" text="Är du säker på att du vill ta bort titeln:">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="removeTitleInfo" layoutX="53.0" layoutY="52.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="218.0" layoutY="217.0" mnemonicParsing="false" onAction="#deleteExecute" prefHeight="55.0" prefWidth="138.0" text="Ta bort">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="40.0" layoutY="217.0" mnemonicParsing="false" onAction="#goBack" prefHeight="55.0" prefWidth="138.0" text="Stäng">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="54.0" layoutY="152.0" text="Varning! Detta tar också bort alla exemplar av titeln!">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="titleDeleted" layoutX="109.0" layoutY="188.0" />
+   </children>
+</AnchorPane>
